@@ -23,20 +23,25 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
  */
+
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a full-stack developer studying at the Indian Institute of Information Technology, Manipur. I enjoy creating efficient and scalable web applications while focusing on both front-end and back-end development.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React.js",
+  "Node.js",
+  "MongoDB",
+  "Express.js",
+  "Bootstrap",
+  "C++",
+  "PHP",
 ];
 
 /**
@@ -45,7 +50,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am deeply interested in developing scalable and high-performance web applications. By working on both front-end and back-end technologies, I strive to design smooth and intuitive user experiences while addressing real-world challenges. As I advance in my career, I am excited to contribute to cutting-edge projects and continue my growth in the field.";
 
 const About = () => {
   return (
@@ -78,6 +83,27 @@ const About = () => {
         </ul>
         <hr />
         <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+
+        {/* Resume Section */}
+        <hr />
+        <h3>Download My Resume</h3>
+        <p>If you'd like to see my work experience and projects in more detail, feel free to download my resume below.</p>
+        <a
+          href="https://drive.google.com/file/d/13i1VEI0D0qCFrbYWXUiUsez-SLXeCEyx/view?usp=sharing"  // Replace with your resume's actual path
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            backgroundColor: "#007BFF",
+            color: "white",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            textDecoration: "none",
+            fontSize: "1.25rem",
+          }}
+        >
+          Download Resume
+        </a>
       </div>
     </section>
   );
